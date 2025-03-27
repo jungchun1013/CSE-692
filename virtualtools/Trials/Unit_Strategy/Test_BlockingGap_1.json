@@ -1,0 +1,10 @@
+{"world":{"dims":[600,600],"bts":0.01,"gravity":200,"defaults":{"density":1,"friction":0.5,"elasticity":0.5,"color":"black","bk_color":"white"},"objects":{"_LeftWall":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[-1,-1],[-1,601],[1,601],[1,-1]]},"_BottomWall":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[-1,-1],[-1,1],[601,1],[601,-1]]},"_RightWall":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[599,-1],[599,601],[601,601],[601,-1]]},"_TopWall":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[-1,599],[-1,601],[601,601],[601,599]]},
+"Goal":{"type":"Container","color":"black","density":0,"friction":0.5,"elasticity":0.5,"points":[[225,80],[225,0],[295,0],[295,80]],"width":10,"innerColor":"green","outerColor":"black"},
+"Ramp":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[430,400],[430,492],[600,560],[600,400]]},
+"Block":{"type":"Poly","color":"Blue","density":1,"friction":0.5,"elasticity":0.5,"vertices":[[225,300],[225,370],[295,370],[295,300]]},
+"Column":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[220,255],[220,270],[300,270],[300,255]]},
+"LeftFloor":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[80,140],[80,160],[200,160],[200,140]]},
+"RightFloor":{"type":"Poly","color":"black","density":0,"friction":0.5,"elasticity":0.5,"vertices":[[320,140],[320,160],[430,160],[430,140]]},
+"Ball":{"type":"Ball","color":"red","density":1,"friction":0.5,"elasticity":0.5,"velocity":[0,0],"position":[575,575],"radius":12}},
+"blocks":{},"constraints":{},
+"gcond":{"type":"SpecificInGoal","goal":"Goal","obj":"Ball","duration":2}},"tools":{"obj1":[[[-25, -15], [0, 10], [25, -15]]],"obj2":[[[-30, -15], [-30, 15], [30, 15], [0, -15]]],"obj3":[[[-40, -5], [-40, 5], [40, 5], [40, -5]]]},"toolNames":["obj1","obj2","obj3"],"sucText":"Get the red ball into the green goal"}

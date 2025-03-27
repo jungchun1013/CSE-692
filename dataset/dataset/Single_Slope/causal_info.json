@@ -1,0 +1,19 @@
+{
+    "edges": [
+        {
+            "from": "Slope",
+            "to": "Ball",
+            "start_frame": 0,
+            "end_frame": 17,
+            "type": "collision"
+        },
+        {
+            "from": "Ball",
+            "to": "Goal",
+            "start_frame": 17,
+            "end_frame": 44,
+            "type": "goal"
+        }
+    ],
+    "collisions": []
+}
