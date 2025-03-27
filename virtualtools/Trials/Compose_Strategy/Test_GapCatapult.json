@@ -1,0 +1,25 @@
+{"world": 
+    {"dims": [600, 600], "bts": 0.01, "gravity": 200, 
+    "defaults": {"density": 1, "friction": 0.5, "elasticity": 0.5, "color": "black", "bk_color": "white"}, 
+    "objects": {
+        "_LeftWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, -1], [-1, 601], [1, 601], [1, -1]]}, 
+        "_BottomWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, -1], [-1, 1], [601, 1], [601, -1]]}, 
+        "_RightWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[599, -1], [599, 601], [601, 601], [601, -1]]}, 
+        "_TopWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, 599], [-1, 601], [601, 601], [601, 599]]},
+        "Slope": {"type": "Poly", "color": "black", "density": 0, "vertices": [[0, 370], [0, 470], [80, 460],[80, 370]]},  
+        "Plate1": {"type": "Poly", "color": "blue", "density": 1, "vertices": [[85, 475], [85, 485], [165, 485], [165, 475]]},  
+        "Buttom": {"type": "Poly", "color": "black", "density": 0, "vertices": [[80, 370], [80, 380], [170, 380], [170, 370]]},   
+        "Floor": {"type": "Poly", "color": "black", "density": 0, "vertices": [[170, 370], [170, 430], [180, 430], [180, 370]]},  
+        
+        "Slope1": {"type": "Poly", "color": "black", "density": 0, "vertices": [[520, 370], [520, 460], [600, 470], [600, 370]]},  
+        "Plate2": {"type": "Poly", "color": "blue", "density": 1, "vertices": [[435, 475], [435, 485], [515, 485], [515, 475]]},  
+        "Buttom1": {"type": "Poly", "color": "black", "density": 0, "vertices": [[420, 370], [420, 380], [520, 380], [520, 370]]},   
+        "Floor1": {"type": "Poly", "color": "black", "density": 0, "vertices": [[420, 370], [420, 430], [430, 430], [430, 370]]},
+        "Cradle": {"type": "Poly", "color": "black", "density": 0, "vertices": [[360, 0], [360, 82], [600, 82], [600, 0]]},
+        "Goal": {"type": "Container", "color": "black", "density": 0, "points": [[5, 78], [5, 5], [160, 5], [160, 78]], "width": 5, "innerColor": "green", "outerColor": "black"},
+        "Catapult": {"type": "Compound", "color": "blue", "density": 1, "polys": [[[230, 82], [230, 97], [480, 97], [480, 82]], [[480, 97], [480, 112], [495, 112], [495, 97]], [[480, 82], [480, 97], [495, 97], [495, 82]]]},
+        "CataBall2": {"type": "Ball", "color": "red", "density": 1, "position": [560, 550], "radius": 20},
+        "CataBall1": {"type": "Ball", "color": "red", "density": 1, "position": [40, 540], "radius": 30},
+        "Ball": {"type": "Ball", "color": "red", "density": 1, "position": [450, 120], "radius": 15}
+        }, 
+        "blocks": {}, "constraints": {}, "gcond": {"type": "ManyInGoal", "objlist": ["Ball", "CataBall1", "CataBall2"], "goal": "Goal", "duration": 1}}, "tools": {"obj1": [[[-30, 20], [30, 20], [6, -22], [-6, -22]]], "obj2": [[[-10, -37], [-10, 37], [10, 37], [10, -37]]], "obj3": [[[-44, -6], [-44, 6], [44, 6], [44, -6]]]}, "toolNames": ["obj1", "obj2", "obj3"], "toolStatic": {"obj1":false, "obj2": false, "obj3": false}, "sucText": "Get a red ball into the green goal"}

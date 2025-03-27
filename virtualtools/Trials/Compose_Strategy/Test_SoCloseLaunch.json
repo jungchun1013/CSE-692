@@ -1,0 +1,24 @@
+{"world": 
+    {"dims": [600, 600], "bts": 0.01, "gravity": 200, 
+    "defaults": {"density": 1, "friction": 0.5, "elasticity": 0.5, "color": "black", "bk_color": "white"}, 
+    "objects": {
+        "_LeftWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, -1], [-1, 601], [1, 601], [1, -1]]}, 
+        "_BottomWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, -1], [-1, 1], [601, 1], [601, -1]]}, 
+        "_RightWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[599, -1], [599, 601], [601, 601], [601, -1]]}, 
+        "_TopWall": {"type": "Poly", "color": "black", "density": 0, "vertices": [[-1, 599], [-1, 601], [601, 601], [601, 599]]},
+        "Floor1": {"type": "Poly", "color": "black", "density": 0, "vertices": [[240, 380], [240, 390], [600, 390], [600, 380]]},
+        "Floor2": {"type": "Poly", "color": "black", "density": 0, "vertices": [[214, 264], [214, 284], [430, 284], [430, 264]]},
+        "Floor3": {"type": "Poly", "color": "black", "density": 0, "vertices": [[0, 198], [0, 218], [60, 218], [60, 198]]},
+        "Floor4": {"type": "Poly", "color": "black", "density": 0, "vertices": [[120, 280], [120, 300], [153, 300], [153, 280]]},
+        "Floor5": {"type": "Poly", "color": "black", "density": 0, "vertices": [[160, 165], [160, 175], [360, 175], [360, 165]]},
+        "Slope": {"type": "Poly", "color": "black", "density": 0, "vertices": [[0, 0], [0, 100], [480, 30], [480, 0]]},
+        "Ceiling": {"type": "Poly", "color": "black", "density": 0, "vertices": [[300, 460], [300, 600], [400, 600], [400, 460]]},
+        "Ceiling2": {"type": "Poly", "color": "black", "density": 0, "vertices": [[240, 417], [240, 600], [300, 600], [300, 417]]},
+        "Block": {"type": "Poly", "color": "blue", "density": 1, "vertices": [[520, 540], [475, 590], [550, 590], [550, 540]]},
+        "Ball1": {"type": "Ball", "color": "red", "density": 1, "position": [508, 417], "radius": 16},
+
+        "Goal": {"type": "Container", "color": "black", "density": 0, "points": [[600, 72], [600, 0], [480, 0], [480, 72]], "width": 5, "innerColor": "green", "outerColor": "black"}, 
+        "Ball2": {"type": "Ball", "color": "red", "density": 1, "position": [370, 415], "radius": 12},
+        "Ball3": {"type": "Ball", "color": "red", "density": 1, "position": [36, 235], "radius": 12}
+        }, 
+        "blocks": {}, "constraints": {}, "gcond": {"type": "ManyInGoal", "objlist": ["Ball1", "Ball2", "Ball3"], "goal": "Goal", "duration": 1}}, "tools": {"obj1": [[[-22, 22], [20, -22],  [-22, -22]]], "obj2": [[[-37, 20], [37, 20], [10, -22], [-10, -22]]], "obj3": [[[20, 20], [20, -20], [-20, -20], [-20,20]]]}, "toolNames": ["obj1", "obj2", "obj3"],"toolStatic": {"obj1": false, "obj2": false, "obj3": false}, "sucText": "Get a red ball into the green goal"}

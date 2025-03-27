@@ -1,0 +1,12 @@
+{
+    "edges": [
+        {
+            "from": "Ball",
+            "to": "Goal",
+            "start_frame": 0,
+            "end_frame": 35,
+            "type": "goal"
+        }
+    ],
+    "collisions": []
+}
